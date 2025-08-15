@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>s82 App-Building 2</title>
+
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="index.css" />
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark sticky-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#home">Edu Wow</a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto gap-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#featured">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#categories-section"
+                                >Categories</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <section id="home" class="section py-5 text-center">
+            <div class="container">
+                <h1>Welcome to Edu Wow</h1>
+                <p>Your Gateway to Smarter Learning</p>
+                <div id="introduction" class="intro-text">
+                    <p>
+                        At Edu Wow, we believe learning should be exciting,
+                        accessible, and inspiring. Our platform connects you
+                        with high-quality educational resources, from science
+                        experiments and math practice to technology guides and
+                        history insights — all in one place.
+                    </p>
+                    <p>
+                        Whether you’re a student, teacher, or lifelong learner,
+                        Edu Wow helps you explore, discover, and grow at your
+                        own pace.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <div class="container container-fluid">
+            <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button
+                        type="button"
+                        data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide-to="0"
+                        class="active"
+                    ></button>
+                    <button
+                        type="button"
+                        data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide-to="1"
+                    ></button>
+                    <button
+                        type="button"
+                        data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide-to="2"
+                    ></button>
+                    <button
+                        type="button"
+                        data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide-to="3"
+                    ></button>
+                    <button
+                        type="button"
+                        data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide-to="4"
+                    ></button>
+                    <button
+                        type="button"
+                        data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide-to="5"
+                    ></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img
+                            src="https://habitatbroward.org/wp-content/uploads/2020/01/10-Benefits-Showing-Why-Education-Is-Important-to-Our-Society.jpg"
+                            class="d-block w-100 carousel-img"
+                            alt="carousel-images"
+                        />
+                    </div>
+                    <div class="carousel-item">
+                        <img
+                            src="https://www.hwcooling.net/wp-content/uploads/2022/12/Online-Learning.jpg"
+                            class="d-block w-100 carousel-img"
+                            alt="carousel-images"
+                        />
+                    </div>
+                    <div class="carousel-item">
+                        <img
+                            src="https://blog.coursify.me/wp-content/uploads/2019/09/online-education-coursifyme.jpg"
+                            class="d-block w-100 carousel-img"
+                            alt="carousel-images"
+                        />
+                    </div>
+                    <div class="carousel-item">
+                        <img
+                            src="https://builtin.com/sites/www.builtin.com/files/thumbnail-online-learning-platforms.jpg"
+                            class="d-block w-100 carousel-img"
+                            alt="carousel-images"
+                        />
+                    </div>
+                    <div class="carousel-item">
+                        <img
+                            src="https://www.hurix.com/wp-content/uploads/2020/02/Image_1-31.jpg"
+                            class="d-block w-100 carousel-img"
+                            alt="carousel-images"
+                        />
+                    </div>
+                    <div class="carousel-item">
+                        <img
+                            src="https://www.21kschool.com/ph/wp-content/uploads/sites/26/2024/07/Decoding-the-Debate-Online-vs-Traditional-Education-%E2%80%93-Which-Path-is-Right-for-You_.png"
+                            class="d-block w-100 carousel-img"
+                            alt="carousel-images"
+                        />
+                    </div>
+                </div>
+                <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev"
+                >
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next"
+                >
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </div>
+
+        <section id="featured" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-4">Featured Resources</h2>
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card h-100 shadow-sm">
+                            <img
+                                src="https://play-lh.googleusercontent.com/0vuZSCRhrsPiUdjqv3VQXMObdyeOZOXGriwFstqcejKXZUJ16Bw6g0eoEmeezE7UfO0"
+                                class="card-img-top"
+                                alt="Science Quiz"
+                            />
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    Interactive Science Quiz
+                                </h5>
+                                <p class="card-text">
+                                    Test your knowledge with fun and challenging
+                                    science trivia.
+                                </p>
+                                <a
+                                    href="about:blank"
+                                    target="_blank"
+                                    class="btn btn-success"
+                                    >Try Now</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card h-100 shadow-sm">
+                            <img
+                                src="https://livinglutheran.blob.core.windows.net/cdn/wp-content/uploads/2022/10/study-guide.png"
+                                class="card-img-top"
+                                alt="Study Guide"
+                            />
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    Math Formula Cheat Sheet
+                                </h5>
+                                <p class="card-text">
+                                    A handy PDF with all essential math formulas
+                                    in one place.
+                                </p>
+                                <a
+                                    href="about:blank"
+                                    target="_blank"
+                                    class="btn btn-success"
+                                    >Download</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card h-100 shadow-sm">
+                            <img
+                                src="https://www.abcformazione.it/uploads/2024/03/28/thumb/s_w500_h400/come-fare-video-tutorial-369.jpg"
+                                class="card-img-top"
+                                alt="Video Lesson"
+                            />
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    5-Minute Algebra Tips
+                                </h5>
+                                <p class="card-text">
+                                    Learn quick tricks to solve algebra problems
+                                    faster.
+                                </p>
+                                <a
+                                    href="about:blank"
+                                    target="_blank"
+                                    class="btn btn-success"
+                                    >Watch Now</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card h-100 shadow-sm">
+                            <img
+                                src="https://iristech.co/wp-content/uploads/2019/11/reading-ebook.jpg"
+                                class="card-img-top"
+                                alt="E-book"
+                            />
+                            <div class="card-body">
+                                <h5 class="card-title">Free Python E-book</h5>
+                                <p class="card-text">
+                                    Kickstart your coding journey with this
+                                    beginner-friendly guide.
+                                </p>
+                                <a
+                                    href="about:blank"
+                                    target="_blank"
+                                    class="btn btn-success"
+                                    >Read More</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="categories-section" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-4">Explore by Category</h2>
+                <p class="text-center text-muted mb-5">
+                    Choose a topic that sparks your curiosity. Each category
+                    offers a quick intro to help you dive right in.
+                </p>
+                <div id="categories" class="row gy-5 gx-5">
+                    <div class="col-md-6">
+                        <a
+                            href="about:blank"
+                            target="_blank"
+                            class="text-decoration-none text-dark"
+                        >
+                            <div
+                                class="card text-center category-card p-4"
+                                style="max-width: 90%; margin: auto"
+                            >
+                                <div style="font-size: 2rem">🧪</div>
+                                <h5 class="card-title mt-2">Science Lab</h5>
+                                <p class="text-muted small">
+                                    Discover the wonders of chemistry, biology,
+                                    and physics. Learn through exciting
+                                    experiments and see how science explains the
+                                    world around us.
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-md-6">
+                        <a
+                            href="about:blank"
+                            target="_blank"
+                            class="text-decoration-none text-dark"
+                        >
+                            <div
+                                class="card text-center category-card p-4"
+                                style="max-width: 90%; margin: auto"
+                            >
+                                <div style="font-size: 2rem">➗</div>
+                                <h5 class="card-title mt-2">Math Hub</h5>
+                                <p class="text-muted small">
+                                    From basic arithmetic to advanced problem
+                                    solving, sharpen your skills and find the
+                                    patterns that make numbers fascinating.
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-md-6">
+                        <a
+                            href="about:blank"
+                            target="_blank"
+                            class="text-decoration-none text-dark"
+                        >
+                            <div
+                                class="card text-center category-card p-4"
+                                style="max-width: 90%; margin: auto"
+                            >
+                                <div style="font-size: 2rem">💻</div>
+                                <h5 class="card-title mt-2">Tech Corner</h5>
+                                <p class="text-muted small">
+                                    Explore coding, robotics, and the digital
+                                    tools that power our modern world. Perfect
+                                    for aspiring innovators and problem solvers.
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-md-6">
+                        <a
+                            href="about:blank"
+                            target="_blank"
+                            class="text-decoration-none text-dark"
+                        >
+                            <div
+                                class="card text-center category-card p-4"
+                                style="max-width: 90%; margin: auto"
+                            >
+                                <div style="font-size: 2rem">📜</div>
+                                <h5 class="card-title mt-2">History Vault</h5>
+                                <p class="text-muted small">
+                                    Travel back in time to uncover key events,
+                                    remarkable figures, and stories that shaped
+                                    our societies and cultures.
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="resources" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-4">Sample Resources</h2>
+                <p class="text-center mb-5">
+                    Boost your learning with curated resources designed to make
+                    studying more fun and effective. Explore hands-on
+                    activities, interactive guides, and educational materials
+                    that keep you curious and motivated.
+                </p>
+
+                <div class="row g-4">
+                    <div class="col-md-3">
+                        <a
+                            href="about:blank"
+                            target="_blank"
+                            class="text-decoration-none text-dark"
+                        >
+                            <div class="card h-100 resource-card">
+                                <img
+                                    src="https://i5.walmartimages.com/seo/Science-Kits-for-Kids-60-Lab-Experiments-Science-Set-Stem-Toys-Science-Kits-for-Kids-8-and-up-Gift-for-Kids-Ages-8-12_249639b4-72dd-4225-89dc-a34bf276a72e.ebe443bf01804aed0b79d8ac17db1c82.jpeg"
+                                    class="card-img-top"
+                                    alt="Science Kit"
+                                />
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        DIY Science Kit
+                                        <span class="badge bg-success"
+                                            >🧪 Experiment</span
+                                        >
+                                    </h5>
+                                    <p class="card-text">
+                                        Hands-on experiments for young
+                                        scientists to explore the wonders of
+                                        chemistry and physics.
+                                    </p>
+                                    <div class="alert alert-warning p-2 mt-3">
+                                        <strong>Quick Challenge:</strong> What
+                                        gas is released when vinegar reacts with
+                                        baking soda?
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-md-3">
+                        <a
+                            href="about:blank"
+                            target="_blank"
+                            class="text-decoration-none text-dark"
+                        >
+                            <div class="card h-100 resource-card">
+                                <img
+                                    src="https://dru69sbqnarp.cloudfront.net/imgs/products/algebra.png"
+                                    class="card-img-top"
+                                    alt="Math Worksheets"
+                                />
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        Math Mastery Worksheets
+                                        <span class="badge bg-primary"
+                                            >📄 PDF</span
+                                        >
+                                    </h5>
+                                    <p class="card-text">
+                                        Printable activities for practice,
+                                        review, and skill-building in algebra,
+                                        geometry, and more.
+                                    </p>
+                                    <div class="alert alert-info p-2 mt-3">
+                                        <strong>Quick Challenge:</strong> What
+                                        is the value of x if 3x + 12 = 21?
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-md-3">
+                        <a
+                            href="about:blank"
+                            target="_blank"
+                            class="text-decoration-none text-dark"
+                        >
+                            <div class="card h-100 resource-card">
+                                <img
+                                    src="https://i.ytimg.com/vi/Z1Yd7upQsXY/maxresdefault.jpg"
+                                    class="card-img-top"
+                                    alt="Coding Tutorial"
+                                />
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        Beginner Coding Guide
+                                        <span class="badge bg-danger"
+                                            >🎥 Video</span
+                                        >
+                                    </h5>
+                                    <p class="card-text">
+                                        Step-by-step tutorials to help you write
+                                        your first lines of code and build
+                                        mini-projects.
+                                    </p>
+                                    <div class="alert alert-secondary p-2 mt-3">
+                                        <strong>Quick Challenge:</strong> In
+                                        HTML, what tag is used for the largest
+                                        heading?
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-md-3">
+                        <a
+                            href="about:blank"
+                            target="_blank"
+                            class="text-decoration-none text-dark"
+                        >
+                            <div class="card h-100 resource-card">
+                                <img
+                                    src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1403195547i/21563933.jpg"
+                                    class="card-img-top"
+                                    alt="History E-book"
+                                />
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        History E-Book
+                                        <span class="badge bg-warning text-dark"
+                                            >📚 E-Book</span
+                                        >
+                                    </h5>
+                                    <p class="card-text">
+                                        Fascinating stories from the past that
+                                        shaped the world we live in today.
+                                    </p>
+                                    <div class="alert alert-dark p-2 mt-3">
+                                        <strong>Quick Challenge:</strong> Who
+                                        was the first president of the United
+                                        States?
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="py-5">
+            <div class="container">
+                <div class="row g-5 justify-content-center">
+                    <div class="col-md-6 d-flex">
+                        <div
+                            id="mission"
+                            class="p-4 bg-white shadow-sm h-100 w-100 mx-auto"
+                            style="
+                                border: 2px solid #6bbf6b;
+                                border-radius: 8px;
+                            "
+                        >
+                            <h2 class="mb-4 text-success">About Us</h2>
+                            <p>
+                                Welcome to Edu Wow, where curiosity meets
+                                knowledge! Our mission is to provide engaging,
+                                accessible, and fun learning opportunities for
+                                people of all ages.
+                            </p>
+                            <h4 class="mt-4 text-success">Our Mission</h4>
+                            <p>
+                                To inspire lifelong learning by delivering
+                                interactive educational content and fostering a
+                                community of inquisitive minds.
+                            </p>
+                            <h4 class="mt-4 text-success">Our Vision</h4>
+                            <p>
+                                To become the go-to digital hub for exploring
+                                ideas, discovering new skills, and making
+                                learning an enjoyable adventure.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 d-flex">
+                        <div
+                            id="contact"
+                            class="p-4 bg-white shadow-sm h-100 w-100 mx-auto"
+                            style="
+                                border: 2px solid #6bbf6b;
+                                border-radius: 8px;
+                            "
+                        >
+                            <h4 class="mb-3 text-success">
+                                Contact Information
+                            </h4>
+                            <p>
+                                <strong>Address:</strong> Guess Street, Random
+                                City
+                            </p>
+                            <p><strong>Email:</strong> info@eduwow.com</p>
+                            <div class="ratio ratio-16x9 mt-3 shadow-sm">
+                                <iframe
+                                    src="https://www.youtube.com/embed/CFef9VZcB8s?si=r1qk10TQWWvDa4al"
+                                    title="YouTube video player"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowfullscreen
+                                ></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
