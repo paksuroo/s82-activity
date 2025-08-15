@@ -3,7 +3,17 @@ html {
 }
 
 body {
-    background-color: #f5f9f5; /* Light pastel green background for entire page */
+    background-color: #f5f9f5;
+    font-family: "Montserrat", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Montserrat", sans-serif;
 }
 
 .intro-text {
