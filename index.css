@@ -1,12 +1,17 @@
+/* Smooth scrolling */
 html {
     scroll-behavior: smooth;
 }
 
+/* Body and font */
 body {
     background-color: #f5f9f5;
     font-family: "Montserrat", sans-serif;
+    color: #000;
+    margin: 0;
 }
 
+/* Headings */
 h1,
 h2,
 h3,
@@ -16,32 +21,7 @@ h6 {
     font-family: "Montserrat", sans-serif;
 }
 
-.intro-text {
-    border: 3px solid #81c784;
-    border-radius: 12px;
-    padding: 20px;
-    max-width: 700px;
-    margin: 20px auto;
-    background-color: #e8f5e9;
-    color: #000;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
-}
-
-.carousel-img {
-    height: 400px;
-    object-fit: cover;
-    border-radius: 20px;
-}
-
-#featured h2 {
-    font-weight: bold;
-}
-
-.card img {
-    height: 200px;
-    object-fit: cover;
-}
-
+/* Navbar */
 .navbar-brand {
     font-weight: 700;
     font-size: 1.5rem;
@@ -58,18 +38,115 @@ h6 {
     color: #81c784;
 }
 
+/* Sections */
+section {
+    padding: 60px 0;
+}
+
+/* Home Section */
+#home {
+    position: relative;
+    height: 100vh; /* full viewport height */
+    overflow: hidden;
+    color: white;
+}
+
+/* YouTube background video */
+.video-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.video-bg iframe {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none; /* allows interaction with content */
+}
+
+/* Home container */
+#home .container {
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Intro text */
+.intro-text {
+    background-color: rgba(0, 0, 0, 0.6); /* darker for contrast */
+    color: #fff; /* white text */
+    border-radius: 15px;
+    padding: 25px;
+    max-width: 1200px;
+    margin: 20px auto;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Hero titles */
+.home-title,
+.home-subtitle {
+    color: #111; /* dark text for visibility */
+    background-color: rgba(255, 255, 255, 0.7); /* semi-transparent overlay */
+    padding: 10px 20px;
+    border-radius: 12px;
+    text-align: center;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    margin-bottom: 15px;
+}
+
+/* Carousel images */
+.carousel-img {
+    height: 400px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+/* Featured Section */
+#featured h2 {
+    font-weight: bold;
+}
+
+.card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Cards */
 .category-card,
 .resource-card {
     border-radius: 12px;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.08);
 }
+
 .category-card:hover,
 .resource-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
 }
 
+/* Card titles and text */
+.card-title {
+    font-weight: bold;
+}
+
+.card-text {
+    color: #555;
+}
+
+/* Icons */
 .icon-circle {
     width: 60px;
     height: 60px;
@@ -78,10 +155,170 @@ h6 {
     font-size: 1.5rem;
 }
 
-.card-title {
+.full-height-container {
+    height: 100vh; /* full viewport height */
+    display: flex;
+    flex-direction: column; /* stack intro-text and carousel vertically */
+    justify-content: center; /* center content vertically */
+    align-items: center; /* center content horizontally */
+}
+
+.carousel-fullheight {
+    height: 100vh; /* full viewport height */
+    overflow: hidden;
+    position: relative;
+}
+
+/* Make carousel images cover container */
+.carousel-fullheight .carousel-item img {
+    height: 100vh;
+    object-fit: cover;
+}
+
+/* Intro text overlay */
+.intro-overlay {
+    position: absolute;
+    top: 50%; /* vertical center */
+    left: 50%; /* horizontal center */
+    transform: translate(-50%, -50%);
+    color: white; /* text color */
+    background-color: rgba(0, 0, 0, 0.5); /* semi-transparent for readability */
+    padding: 20px;
+    border-radius: 12px;
+    max-width: 700px;
+    text-align: center;
+    z-index: 10; /* make sure it's above the carousel */
+}
+/* Full viewport height and width container */
+.full-height-container {
+    position: relative;
+    height: 100vh; /* full height */
+    width: 100vw; /* full width */
+    overflow: hidden;
+}
+
+/* Carousel fill */
+.carousel,
+.carousel-inner,
+.carousel-item,
+.carousel-item img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* Overlay intro text on top */
+#introduction {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10; /* above carousel */
+    background-color: rgba(
+        0,
+        0,
+        0,
+        0.75
+    ); /* darker semi-transparent background */
+    color: #fff; /* bright text */
+    padding: 30px;
+    border-radius: 12px;
+    max-width: 700px;
+    width: 90%; /* responsive width */
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+    border: 3px solid #ffffff; /* white border for high contrast */
+}
+
+/* Carousel controls above carousel */
+.carousel-control-prev,
+.carousel-control-next {
+    z-index: 5;
+}
+
+/* Text inside intro */
+#introduction p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    font-weight: 600;
+}
+
+/* Full viewport height for categories section */
+#categories-section {
+    background-color: #1a1a1a; /* dark background */
+    color: #ffffff;
+    width: 100%;
+    height: 100vh; /* full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* vertical centering */
+    align-items: center; /* horizontal centering */
+    padding: 60px 0; /* optional extra spacing */
+}
+
+/* Headings and description */
+#categories-section h2,
+#categories-section p {
+    color: #ffffff;
+    text-align: center;
+}
+
+/* Cards inside the section */
+.category-card {
+    background-color: #ffffff;
+    color: #111;
+    border: 2px solid #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    padding: 25px;
+    max-width: 90%;
+    margin: auto;
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Card titles and text */
+.category-card .card-title {
     font-weight: bold;
 }
 
-.card-text {
+.category-card p {
     color: #555;
+}
+
+/* Emoji / icons */
+.category-card div {
+    font-size: 2rem;
+}
+
+/* About section background */
+#about {
+    background-color: #f0eee8; /* subtle eggshell white */
+    color: #000; /* black text */
+    padding: 60px 0;
+}
+
+/* Cards inside About section */
+#about .bg-white {
+    background-color: rgba(
+        255,
+        255,
+        255,
+        0.8
+    ); /* slightly transparent white for subtle contrast */
+    color: #000; /* black text */
+    border: 2px solid #ffffff; /* white border */
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25); /* subtle shadow */
+    padding: 25px;
+}
+
+/* Headings inside cards */
+#about h2,
+#about h4 {
+    color: #000; /* black headings */
 }
