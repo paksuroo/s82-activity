@@ -322,3 +322,148 @@ section {
 #about h4 {
     color: #000; /* black headings */
 }
+
+/* Add these at the end of your CSS file */
+
+/* Responsive adjustments */
+@media (max-width: 1199.98px) {
+    /* Large devices (desktops, less than 1200px) */
+    .intro-text {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 991.98px) {
+    /* Medium devices (tablets, less than 992px) */
+    section {
+        padding: 40px 0;
+    }
+
+    #home .container {
+        padding-bottom: 40px;
+    }
+
+    .navbar-nav {
+        padding-top: 15px;
+    }
+
+    .category-card,
+    .resource-card {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    /* Small devices (landscape phones, less than 768px) */
+    section {
+        padding: 30px 0;
+    }
+
+    .home-title,
+    .home-subtitle {
+        font-size: 1.5rem;
+        padding: 8px 15px;
+    }
+
+    #introduction {
+        padding: 20px;
+        width: 95%;
+    }
+
+    #introduction p {
+        font-size: 1rem;
+    }
+
+    .carousel-img {
+        height: 300px;
+    }
+
+    .full-height-container {
+        height: auto;
+        min-height: 100vh;
+    }
+}
+
+@media (max-width: 575.98px) {
+    /* Extra small devices (portrait phones, less than 576px) */
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+
+    .home-title {
+        font-size: 1.8rem;
+    }
+
+    .home-subtitle {
+        font-size: 1.2rem;
+    }
+
+    .intro-text {
+        padding: 15px;
+        font-size: 0.9rem;
+    }
+
+    #featured .card,
+    #resources .card {
+        margin-bottom: 20px;
+    }
+
+    #categories-section {
+        height: auto;
+        padding: 40px 0;
+    }
+
+    .category-card {
+        padding: 15px;
+    }
+
+    #about .col-md-6 {
+        margin-bottom: 20px;
+    }
+}
+
+/* Ensure video background scales properly on mobile */
+@media (max-aspect-ratio: 16/9) {
+    .video-bg iframe {
+        width: auto;
+        height: 100%;
+    }
+}
+
+/* Fix for navbar toggler on small screens */
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+/* Improve card layout on smaller screens */
+@media (max-width: 767.98px) {
+    .resource-card .alert {
+        font-size: 0.8rem;
+        padding: 8px;
+    }
+
+    .card-title {
+        font-size: 1rem;
+    }
+
+    .card-text {
+        font-size: 0.9rem;
+    }
+}
+
+/* Adjust carousel height for mobile */
+@media (max-width: 767.98px) {
+    .carousel,
+    .carousel-inner,
+    .carousel-item,
+    .carousel-item img {
+        height: 50vh;
+    }
+}
+
+/* Make sure intro overlay doesn't get too wide */
+@media (min-width: 768px) {
+    #introduction {
+        width: 80%;
+    }
+}
